@@ -34,7 +34,7 @@ return packer.startup(function(use)
     use 'onsails/lspkind-nvim'
     use 'kosayoda/nvim-lightbulb'
     use 'kabouzeid/nvim-lspinstall'
-    use 'folke/lsp-trouble.nvim'
+    use 'folke/lsp-trouble.nvim'    
 
     -- Debug
     use 'mfussenegger/nvim-dap'
@@ -135,4 +135,7 @@ return packer.startup(function(use)
 
 	-- Strip WhiteSpace
 	use "ntpeters/vim-better-whitespace"
+    
+    -- Prettier
+    use {'prettier/vim-prettier', run = 'yarn install', ft = {'javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html', 'javascriptreact', 'typescriptreact'}}
 end)

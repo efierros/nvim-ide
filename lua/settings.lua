@@ -23,7 +23,7 @@ vim.cmd('set sw=4') -- Change the number of space characters inserted for indent
 vim.bo.expandtab = true -- Converts tabs to spaces
 vim.o.smarttab = true -- Smart tab
 vim.wo.number = true -- set numbered lines
-vim.wo.relativenumber = false -- set relative number
+vim.wo.relativenumber = true -- set relative number
 vim.wo.cursorline = true -- Enable highlighting of the current line
 vim.o.showtabline = 2 -- Always show tabs
 vim.o.showmode = false -- We don't need to see things like -- INSERT -- anymore
@@ -36,4 +36,7 @@ vim.o.clipboard = "unnamedplus" -- Copy paste between vim and everything else
 -- vim.o.guifont = "JetBrainsMono\\ Nerd\\ Font\\ Mono:h18"
 -- vim.o.guifont = "Hack\\ Nerd\\ Font\\ Mono"
 -- vim.o.guifont = "SauceCodePro Nerd Font:h17"
-vim.o.guifont = "FantasqueSansMono Nerd Font"
+vim.o.guifont = "FiraCode Nerd Font"
+
+vim.api.nvim_command('au InsertLeave,FocusLost * silent! wa')
+vim.api.nvim_command('au FocusLost *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.svelte,*.yaml,*.html PrettierAsync')

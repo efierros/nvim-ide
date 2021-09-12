@@ -84,7 +84,7 @@ return packer.startup(function(use)
     use 'nvim-lua/plenary.nvim'
     use 'nvim-telescope/telescope.nvim'
     use 'nvim-telescope/telescope-media-files.nvim'
-    use 'nvim-telescope/telescope-fzy-native.nvim'
+    use {'nvim-telescope/telescope-fzy-native.nvim', run='make'}
     use 'nvim-telescope/telescope-project.nvim'
 
     -- Themes

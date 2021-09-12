@@ -39,6 +39,5 @@ vim.o.smartindent = true
 -- vim.o.guifont = "Hack\\ Nerd\\ Font\\ Mono"
 -- vim.o.guifont = "SauceCodePro Nerd Font:h17"
 vim.o.guifont = "FiraCode Nerd Font"
-
-vim.api.nvim_command('au BufLeave,FocusLost * silent! wa')
+vim.api.nvim_command('au BufWinLeave,FocusLost * silent! wa')
 --vim.api.nvim_command('au FocusLost *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.svelte,*.yaml,*.html PrettierAsync')

@@ -33,7 +33,11 @@ require('config.nvim-whichkey')
 require('config.nvim-multi-cursor')
 require('config.nvim-windowswap')
 require('config.nvim-stripwhitespace')
-require('config.vim-prettier')
+-- require('config.vim-prettier')
+-- require('config.nvim-indentline')
+require('config.emmet-vim')
+require('config.formatter')
+require('config.sessions')
 
 -- LSP
 require('lsp')

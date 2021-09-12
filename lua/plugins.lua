@@ -137,5 +137,15 @@ return packer.startup(function(use)
 	use "ntpeters/vim-better-whitespace"
     
     -- Prettier
-    use {'prettier/vim-prettier', run = 'yarn install', ft = {'javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html', 'javascriptreact', 'typescriptreact'}}
+    --use {'prettier/vim-prettier', run = 'yarn install', ft = {'javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html', 'javascriptreact', 'typescriptreact'}}
+    
+    --Formatter
+    use 'mhartington/formatter.nvim'
+    
+    --Surrounding ysi[w] yss
+    use 'tpope/vim-surround'
+    
+    --Editorconfig
+    use 'editorconfig/editorconfig-vim'
+    
 end)

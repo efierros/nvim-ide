@@ -15,6 +15,7 @@ require('telescope').setup {
             '--line-number',
             '--column',
             '--smart-case',
+            '-u'
         },
         prompt_prefix = " ",
         selection_caret = " ",
@@ -22,18 +23,17 @@ require('telescope').setup {
         initial_mode = "insert",
         selection_strategy = "reset",
         sorting_strategy = "ascending",
-        layout_strategy = "horizontal",
+        layout_strategy = "vertical",
         layout_config = {
 			prompt_position = "top",
 			horizontal = {mirror = false}, vertical = {mirror = false},
-			width = 0.75,
-			preview_cutoff = 120,
+			--width = 0.75,
+			--preview_cutoff = 120,
 		},
         file_sorter = require'telescope.sorters'.get_fzy_sorter,
         file_ignore_patterns = {},
         path_display = {
-			'shorten',
-			'absolute'
+			--'shorten'
 		},
         winblend = 0,
         border = {},

@@ -11,13 +11,7 @@ require'nvim-treesitter.configs'.setup {
         }
     },
     -- indent = {enable = true, disable = {"python", "html", "javascript"}},
-    indent = {
-        enable = true,
-		disable = {
-            -- 'blade',
-            -- 'vue'
-        }
-    },
+    indent = {enable = true, disable = {'blade', 'scss'}},
     playground = {
         enable = true,
         disable = {},

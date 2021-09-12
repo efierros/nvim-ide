@@ -47,4 +47,7 @@ end
 -- and map buffer local keybindings when the language server attaches
 local servers = {"tsserver", "cssls", "intelephense"}
 -- for _, lsp in ipairs(servers) do nvim_lsp[lsp].setup {on_attach = on_attach} end
+
+vim.cmd("au User lsp_setup call lsp#register_server({'name': 'kite', 'cmd': '~/.local/share/kite/current/kite-lsp --editor=vim', 'whitelist': ['php', 'javascript', 'css', 'less', 'scss', 'blade', 'html'],})")
+
 return lsp_config
